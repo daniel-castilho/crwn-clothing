@@ -1,9 +1,9 @@
-import { render } from "node-sass";
 import React, { Component } from "react";
 
 import "./sign-in.styles.scss";
 
 import FormInput from '../form-input/form-input.component';
+import CustomButton from '../../components/custom-button/custom-button.component';
 
 class SignIn extends Component {
 	constructor(props) {
@@ -49,7 +49,7 @@ class SignIn extends Component {
 						handleChange={this.handleChange}
 						required />
 
-					<input type="submit" value="Submit" />
+					<CustomButton type="submit"> sign in </CustomButton>
 				</form>
 			</div>
 		);
